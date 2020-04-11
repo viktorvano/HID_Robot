@@ -37,7 +37,7 @@ public class HidRobot {
         //wait until web page loads
         boolean reCaptcha = false;
         int color;
-        //this loop waits umtil the page is loaded and looks for a pixel of reCaptcha
+        //this loop waits until the page is loaded and looks for a pixel of reCaptcha
         while(!reCaptcha)
         {
             try {
@@ -334,7 +334,7 @@ public class HidRobot {
             case '?': keyStroke(KeyEvent.VK_SHIFT, KeyEvent.VK_SLASH); break;
             case ' ': keyStroke(KeyEvent.VK_SPACE); break;
             default:
-                System.out.println("Cannot type this char: " + (char)character + "its numeric value: " + (int)character);
+                System.out.println("Cannot type this char: " + character + "its numeric value: " + (int)character);
         }
     }
 }
