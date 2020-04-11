@@ -24,8 +24,6 @@ public class HidRobot {
             System.exit(-10);
         }
 
-        int x = 600, y = 300;
-
         beepCountdown(3);
         BufferedImage image = null;
 
@@ -75,6 +73,7 @@ public class HidRobot {
         keyStrokeEnter();
 
         System.out.println("Drawing a square...");
+        int x = 600, y = 300;
         moveCursorTo(x, y);
         robot.mousePress(InputEvent.BUTTON1_MASK);
         sleep(50);
